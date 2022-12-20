@@ -1,0 +1,183 @@
+body {
+    user-select: none;
+    background-color: papayawhip;
+    background-size: cover;
+}
+
+img {
+    opacity: 0;
+}
+
+.btn-closed {
+    cursor: pointer;
+    background-color: pink;
+    border-radius: 100%;
+    transform: translate3d(43rem, 37rem, 0);
+    transition-duration: 700ms;
+    width: 5rem;
+    height: 5rem
+}
+
+.btn:hover {
+    color: rgb(255, 192, 249);
+    transform: scale(1.15);
+    transition-duration: 300ms;
+}
+
+.p-x {
+    font-family: "Montserrat", serif;
+    font-size: 2.2rem;
+    margin: 0;
+    text-align: center;
+    position: inherit;
+}
+
+.p-o {
+    transform: translate3d(-0.1rem, 0.77rem, 0);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.image {
+    width: inherit;
+}
+
+.tile>img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.tile:hover>img {
+    opacity: 1;
+    transform: scale(1.2);
+    transition-duration: 700ms;
+}
+
+.tile {
+    transition-delay: 1s;
+    animation: example1;
+    opacity: 1;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.tile:nth-child(1) {
+    background: none;
+    background-color: pink;
+    width: 15%;
+    left: 5%;
+    top: 5%;
+    animation-duration: 1.5s;
+}
+
+.tile:nth-child(2) {
+    background-color: pink;
+    width: 15%;
+    left: 80%;
+    top: 55%;
+    animation-duration: 1.5s;
+}
+
+.tile:nth-child(3) {
+    background-color: rgb(255, 192, 249);
+    width: 15%;
+    left: 25%;
+    top: 15%;
+    animation-duration: 1.8s;
+}
+
+.tile:nth-child(4) {
+    background-color: pink;
+    width: 15%;
+    left: 25%;
+    top: 65%;
+    animation-duration: 1.8s;
+}
+
+.tile:nth-child(5) {
+    background-color: rgb(255, 192, 249);
+    width: 15%;
+    left: 80%;
+    top: 5%;
+    animation-duration: 1.5s;
+}
+
+.tile:nth-child(6) {
+    background-color: rgb(255, 192, 249);
+    width: 15%;
+    left: 60%;
+    top: 65%;
+    animation-duration: 1.8s;
+}
+
+.tile:nth-child(7) {
+    background-color: rgb(255, 192, 249);
+    width: 15%;
+    left: 5%;
+    top: 55%;
+    animation-duration: 1.5s;
+}
+
+.tile:nth-child(8) {
+    background-color: pink;
+    width: 15%;
+    left: 60%;
+    top: 15%;
+    animation-duration: 1.8s;
+}
+
+@keyframes example1 {
+    0% {
+        left: 40%;
+        top: 40%;
+    }
+}
+
+.small-download-button {
+    opacity: 0;
+    width: 20%;
+    height: 20%;
+    border: none;
+    border-radius: 5px;
+    position: inherit;
+    left: 75%;
+    top: 70%;
+    cursor: pointer;
+}
+
+.big-download-button {
+    opacity: 0;
+    width: 21%;
+    height: 14%;
+    border: none;
+    border-radius: 5px;
+    position: inherit;
+    left: 75%;
+    top: 80%;
+    cursor: pointer;
+}
+
+.fa-solid {
+    color: rgb(47, 47, 47);
+    font-size: 1rem;
+}
+
+.brands {
+    opacity: 0;
+    position: absolute;
+    transform: translate3d(40rem, 38rem, 0);
+}
+
+a {
+    text-align: center;
+    margin: 0;
+}
+
+.left,
+.right {
+    margin: 0;
+}

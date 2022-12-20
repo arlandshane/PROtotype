@@ -1,0 +1,126 @@
+body {
+    background: linear-gradient(45deg, blue, magenta, magenta, blue);
+    background-size: 500%;
+    animation: anime 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes anime {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
+}
+
+.card {
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 1rem;
+}
+
+.card-img {
+    opacity: 0;
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+.card-img:hover {
+    transition-duration: 250ms;
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+.card:nth-child(1) {
+    position: absolute;
+    width: 15rem;
+    transform: translate3d(5rem, 2rem, 0);
+}
+
+.card:nth-child(2) {
+    position: absolute;
+    width: 15rem;
+    transform: translate3d(5rem, 25rem, 0);
+}
+
+.card:nth-child(3) {
+    position: absolute;
+    width: 15rem;
+    transform: translate3d(25rem, 5rem, 0);
+}
+
+.card:nth-child(4) {
+    position: absolute;
+    width: 15rem;
+    transform: translate3d(25rem, 28rem, 0);
+}
+
+.card:nth-child(5) {
+    position: absolute;
+    width: 15rem;
+    transform: translate3d(50rem, 5rem, 0);
+}
+
+.card:nth-child(6) {
+    position: absolute;
+    width: 15rem;
+    transform: translate3d(50rem, 28rem, 0);
+}
+
+.card:nth-child(7) {
+    position: absolute;
+    width: 15rem;
+    transform: translate3d(70rem, 2rem, 0);
+}
+
+.card:nth-child(8) {
+    position: absolute;
+    width: 15rem;
+    transform: translate3d(70rem, 25rem, 0);
+}
+
+.card-img-overlay {
+    text-align: center;
+}
+
+.navigation-middle {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background-color: red;
+    transform: translate3d(44rem, 20rem, 0);
+    cursor: pointer;
+}
+
+.navigation-middle:hover {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    transition-duration: 300ms;
+    background-color: red;
+    transform: translate3d(44rem, 20rem, 0) scale(1.2);
+}
+
+.navigation-down {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background-color: red;
+    transform: translate3d(44rem, 40rem, 0);
+    cursor: pointer;
+}
+
+.navigation-down:hover {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    transition-duration: 300ms;
+    background-color: red;
+    transform: translate3d(44rem, 40rem, 0) scale(1.2);
+}
