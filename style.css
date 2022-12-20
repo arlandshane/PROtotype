@@ -32,7 +32,7 @@ body {
 }
 
 .card-img:hover {
-    transition-duration: 250ms;
+    transition-duration: 300ms;
     opacity: 1;
     transform: scale(1.08);
 }
