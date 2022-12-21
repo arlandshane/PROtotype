@@ -145,3 +145,13 @@ h5 {
     position: absolute;
     transform: translate3d(44.5rem, 35rem, 0);
 }
+
+.closed {
+    transform: translate3d(0, 35rem, 0);
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-brands {
+    padding: 1rem;
+}
