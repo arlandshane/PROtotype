@@ -1,8 +1,9 @@
 body {
     background: linear-gradient(45deg, black, purple, black);
     background-size: 500%;
-    animation: anime 15s ease infinite;
+    animation: 15s ease infinite;
     height: 100vh;
+    caret-color: transparent;
 }
 
 @keyframes anime {
@@ -17,6 +18,10 @@ body {
     100% {
         background-position: 0%;
     }
+}
+
+h5 {
+    color: white;
 }
 
 .card {
@@ -123,4 +128,20 @@ body {
     transition-duration: 300ms;
     background-color: indigo;
     transform: translate3d(44rem, 40rem, 0) scale(1.2);
+}
+
+.middle {
+    transition-duration: 300ms;
+    opacity: 1;
+    color: white;
+    position: absolute;
+    transform: translate3d(44.5rem, 22.5rem, 0);
+}
+
+.down {
+    transition-duration: 300ms;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    transform: translate3d(44.5rem, 35rem, 0);
 }
