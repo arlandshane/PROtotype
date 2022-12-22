@@ -1,9 +1,8 @@
 body {
-    background: linear-gradient(45deg, black, purple, black);
+    background-image: repeating-linear-gradient(45deg, black, purple, black);
+    animation: anime 10s infinite;
     background-size: 500%;
-    animation: 15s ease infinite;
     height: 100vh;
-    caret-color: transparent;
 }
 
 @keyframes anime {
@@ -20,17 +19,20 @@ body {
     }
 }
 
-h5 {
-    color: white;
+.row {
+    padding-top: 2rem;
+    margin: 0;
 }
 
 .card {
+    height: fit-content;
     background-color: transparent;
     border: solid 1px white;
     border-radius: 1rem;
 }
 
 .card-img {
+    margin: auto;
     opacity: 0;
     z-index: 1;
     border-radius: 1rem;
@@ -43,113 +45,87 @@ h5 {
 }
 
 .card:nth-child(1) {
-    position: absolute;
+    padding: 0;
     width: 15rem;
-    transform: translate3d(5rem, 2rem, 0);
 }
 
 .card:nth-child(2) {
-    position: absolute;
+    padding: 0;
     width: 15rem;
-    transform: translate3d(5rem, 25rem, 0);
 }
 
 .card:nth-child(3) {
-    position: absolute;
+    padding: 0;
     width: 15rem;
-    transform: translate3d(25rem, 5rem, 0);
 }
 
 .card:nth-child(4) {
-    position: absolute;
+    padding: 0;
     width: 15rem;
-    transform: translate3d(25rem, 28rem, 0);
 }
 
 .card:nth-child(5) {
-    position: absolute;
+    padding: 0;
     width: 15rem;
-    transform: translate3d(50rem, 5rem, 0);
 }
 
 .card:nth-child(6) {
-    position: absolute;
+    padding: 0;
     width: 15rem;
-    transform: translate3d(50rem, 28rem, 0);
 }
 
 .card:nth-child(7) {
-    position: absolute;
+    padding: 0;
     width: 15rem;
-    transform: translate3d(70rem, 2rem, 0);
 }
 
 .card:nth-child(8) {
-    position: absolute;
+    padding: 0;
     width: 15rem;
-    transform: translate3d(70rem, 25rem, 0);
 }
 
-.card-img-overlay {
-    text-align: center;
+#navi {
+    z-index: 1;
+    position: absolute;
+    background-color: indigo;
+    transition-duration: 300ms;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 100%;
 }
 
 .navigation-middle {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    background-color: indigo;
-    transform: translate3d(44rem, 22rem, 0);
-    cursor: pointer;
-}
-
-.navigation-middle:hover {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    transition-duration: 300ms;
-    background-color: indigo;
-    transform: translate3d(44rem, 22rem, 0) scale(1.2);
+    transform: translate3d(44rem, 0, 0);
 }
 
 .navigation-down {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    background-color: indigo;
-    transform: translate3d(44rem, 40rem, 0);
-    cursor: pointer;
-}
-
-.navigation-down:hover {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    transition-duration: 300ms;
-    background-color: indigo;
-    transform: translate3d(44rem, 40rem, 0) scale(1.2);
+    transform: translate3d(44rem, 15rem, 0);
 }
 
 .middle {
-    transition-duration: 300ms;
+    position: absolute;
     opacity: 1;
     color: white;
-    position: absolute;
-    transform: translate3d(44.5rem, 22.5rem, 0);
+    transform: translate3d(44.4rem, 3.5rem, 0);
 }
 
 .down {
-    transition-duration: 300ms;
+    position: absolute;
     opacity: 0;
     color: white;
-    position: absolute;
-    transform: translate3d(44.5rem, 35rem, 0);
+    transform: translate3d(44.4rem, 13rem, 0);
 }
 
-.closed {
-    transform: translate3d(0, 35rem, 0);
+.icons {
     display: flex;
     justify-content: space-around;
+    z-index: 1;
+    transform: translate3d(0, -7rem, 0);
+}
+
+a {
+    color: white;
 }
 
 .fa-brands {
