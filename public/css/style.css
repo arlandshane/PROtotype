@@ -1,6 +1,7 @@
 body {
-    background-image: repeating-linear-gradient(45deg, black, purple, black);
-    animation: anime 10s infinite;
+    background-color: black;
+    /* background-image: repeating-linear-gradient(45deg, black, purple, black); */
+    animation: anim 10s infinite;
     background-size: 500%;
     height: 100vh;
 }
@@ -25,7 +26,7 @@ body {
 }
 
 .card {
-    height: fit-content;
+    height: auto;
     background-color: transparent;
     border: solid 1px white;
     border-radius: 1rem;
@@ -34,7 +35,6 @@ body {
 .card-img {
     margin: auto;
     opacity: 0;
-    z-index: 1;
     border-radius: 1rem;
 }
 
@@ -96,25 +96,25 @@ body {
 }
 
 .navigation-middle {
-    transform: translate3d(44rem, 0, 0);
+    transform: translate3d(48.5vw, 0, 0);
 }
 
 .navigation-down {
-    transform: translate3d(44rem, 15rem, 0);
+    transform: translate3d(48.5vw, 32vh, 0);
 }
 
 .middle {
     position: absolute;
     opacity: 1;
     color: white;
-    transform: translate3d(44.4rem, 3.5rem, 0);
+    transform: translate3d(49vw, 3.5rem, 0);
 }
 
 .down {
     position: absolute;
     opacity: 0;
     color: white;
-    transform: translate3d(44.4rem, 13rem, 0);
+    transform: translate3d(49vw, 13rem, 0);
 }
 
 .icons {
@@ -130,4 +130,32 @@ a {
 
 .fa-brands {
     padding: 1rem;
+}
+
+.action {
+    width: 0;
+    height: 0;
+}
+
+.heart {
+    background: none;
+    border: none;
+    transform: translate3d(1rem, -2.2rem, 0);
+}
+
+.fa-solid {
+    color: white;
+    transform: scale(1.5);
+}
+
+.fa-solid:hover {
+    transition-duration: 300ms;
+    color: red;
+}
+
+video {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: -1;
 }
