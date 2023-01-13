@@ -1,5 +1,4 @@
 body {
-    background-color: black;
     /* background-image: repeating-linear-gradient(45deg, black, purple, black); */
     animation: anim 10s infinite;
     background-size: 500%;
