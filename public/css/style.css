@@ -1,6 +1,6 @@
 body {
-    /* background-image: repeating-linear-gradient(45deg, black, purple, black); */
-    animation: anim 10s infinite;
+    background-image: repeating-linear-gradient(45deg, black, purple, black);
+    animation: anime 10s infinite;
     background-size: 500%;
     height: 100vh;
 }
@@ -150,11 +150,4 @@ a {
 .fa-solid:hover {
     transition-duration: 300ms;
     color: red;
-}
-
-video {
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    z-index: -1;
 }
